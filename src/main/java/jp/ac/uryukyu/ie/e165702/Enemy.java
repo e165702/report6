@@ -13,6 +13,7 @@ public class Enemy extends LivingThing{
     Enemy(String name,int hitPoint,int attack) {
         super(name, hitPoint, attack);
     }
+    @Override
     public void attack(LivingThing e){
         if(!isDead()) {
             int damage = (int) (Math.random() * getAttack());

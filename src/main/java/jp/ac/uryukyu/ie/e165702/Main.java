@@ -1,8 +1,5 @@
 package jp.ac.uryukyu.ie.e165702;
 
-/**
- * Created by tnal on 2016/11/13.
- */
 public class Main {
     public static void main(String[] args){
         Hero hero = new Hero("勇者", 10, 5);

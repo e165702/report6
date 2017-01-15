@@ -33,6 +33,8 @@ public class LivingThing{
         return name;
     }
 
+    public  int getAttack() { return attack; }
+
     /**
      * Enemyへ攻撃するメソッド。
      * attackに応じて乱数でダメージを算出し、hero.wounded()によりダメージ処理を実行。

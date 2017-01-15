@@ -21,9 +21,9 @@ public class Enemy extends LivingThing{
                 System.out.printf("%sの攻撃！,,,だが、%sは攻撃を回避\n", getName(), e.getName());
             }else {
                 int judge = (int) (Math.random() * 10);
-                if (judge<= 1){
-                    System.out.printf("%sの攻撃！会心の一撃！！%sに%dのダメージを与えた！！\n",getName(), e.getName(), damage * 2);
-                }else{
+                if (judge <= 1) {
+                    System.out.printf("%sの攻撃！痛恨の一撃！！%sに%dのダメージを与えた！！\n", getName(), e.getName(), damage * 2);
+                } else {
                     System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", getName(), e.getName(), damage);
                     e.wounded(damage);
                 }

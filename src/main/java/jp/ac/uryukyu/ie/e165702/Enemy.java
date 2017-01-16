@@ -23,10 +23,12 @@ public class Enemy extends LivingThing{
                 int judge = (int) (Math.random() * 10);
                 if (judge <= 1) {
                     System.out.printf("%sの攻撃！痛恨の一撃！！%sに%dのダメージを与えた！！\n", getName(), e.getName(), damage * 2);
+                    damage = damage*2;
                 } else {
                     System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", getName(), e.getName(), damage);
-                    e.wounded(damage);
                 }
+                    e.wounded(damage);
+
             }
         }
     }

@@ -23,7 +23,7 @@ public class Hero extends LivingThing{
                 int judge = (int) (Math.random() * 10);
                 if (judge<= 2){
                     System.out.printf("%sの攻撃！会心の一撃！！%sに%dのダメージを与えた！！\n",getName(), e.getName(), damage * 2);
-                }else{
+                }else {
                     System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", getName(), e.getName(), damage);
                     e.wounded(damage);
                 }
